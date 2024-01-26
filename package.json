@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.17",
     "daisyui": "^4.6.0",
     "postcss": "^8.4.33",
@@ -19,7 +20,9 @@
     "vite-plugin-top-level-await": "^1.4.1"
   },
   "dependencies": {
+    "exceljs": "^4.4.0",
     "pdfjs-dist": "^4.0.379",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "xlsx": "^0.18.5"
   }
 }

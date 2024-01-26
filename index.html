@@ -7,35 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
-  <body>
+  <body class="bg-slate-50">
     <div class="w-[100vw] h-[100vh] flex">
       <div class="w-1/2 h-full flex items-center">
-        <div
-          class="m-auto w-fit p-3 flex-col gap-2 border rounded-xl border-primary"
-        >
-          <label class="form-control w-full max-w-xs">
-            <div class="label">
-              <span class="label-text">Text Input</span>
-            </div>
-            <input
-              type="text"
-              placeholder="Type here"
-              class="form-input input input-bordered w-full max-w-xs"
-            />
-          </label>
-          <label class="form-control">
-            <div class="label">
-              <span class="label-text">Text Area</span>
-            </div>
-            <textarea
-              class="form-input textarea textarea-bordered h-24 w-[20rem]"
-              placeholder="Bio"
-            ></textarea>
-          </label>
+        <div class="m-auto">
+          <div
+            class="w-fit p-3 flex-col gap-2 border rounded-xl border-primary"
+          >
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">Text Input</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Type here"
+                class="form-input input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <label class="form-control">
+              <div class="label">
+                <span class="label-text">Text Area</span>
+              </div>
+              <textarea
+                class="form-input textarea textarea-bordered h-24 w-[20rem]"
+                placeholder="Bio"
+              ></textarea>
+            </label>
+          </div>
+          <div class="flex justify-center gap-2 mt-2">
+            <button class="btn btn-success">Excel</button>
+            <button class="btn btn-primary">PDF</button>
+          </div>
         </div>
       </div>
-      <div class="flex-1">
+      <div class="flex-1 hidden">
         <iframe id="pdf-embed" title="pdf-embed" class="w-full h-full"></iframe>
+      </div>
+      <div
+        class="flex-1 flex justify-center items-center border border-primary rounded-lg p-3"
+      >
+        <div class="table table-sm bg-slate-300 w-fit h-fit" id="excel"></div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
